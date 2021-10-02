@@ -19,7 +19,7 @@ export default function NewTaskForm() {
                         desc: desc
                     },
                 });
-                alert("new todo created");
+                // alert("new todo created");
             } catch (err) {
                 console.log(err);
             }

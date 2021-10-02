@@ -27,7 +27,7 @@ export default function AllTask() {
             }
         }
         fetchTask()
-    },[]);
+    },[todo]);
     
 
     //below one ise used for printifng all the possible task
