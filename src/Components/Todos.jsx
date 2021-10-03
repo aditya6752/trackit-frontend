@@ -8,6 +8,7 @@ export default function Todos() {
     }
     const contentStyle={
         marginTop:"10px",
+        height:"500px",
     }
     return (
         <div className="container d-flex">

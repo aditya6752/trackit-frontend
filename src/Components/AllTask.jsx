@@ -30,12 +30,13 @@ export default function AllTask() {
     },[todo]);
     const contentStyle = {
         height: "500px",
-        width : "100%"
+        width : "700px",
+        overflow : "scroll"
     }
 
     //below one ise used for printifng all the possible task
     return (
-        <div className="display-flex" style={contentStyle}>
+        <div className="" style={contentStyle}>
             {todo.map((todo)=>{
                return <SingleTask key={todo._id} todo={todo} onDelete={deleteTask}/>
             })}
