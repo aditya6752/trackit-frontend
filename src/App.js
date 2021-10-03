@@ -4,7 +4,7 @@ import Todos from "./Components/Todos";
 function App() {
   return (
     <div>
-      <Header title="Todo App" searchBar={true} />
+      <Header title="Todo App" searchBar={false} />
 
         <Todos />
         <Footer />

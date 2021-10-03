@@ -6,6 +6,7 @@ export default function SingleTask({todo,onDelete}) {
             <h1>{todo.title}</h1>
             
             <p>{todo.desc}</p>
+            <p>{todo.dateOfCompletion}</p>
             <button className="btn btn-danger" onClick={()=>{onDelete(todo)}}> Delete </button>
         </div>
     )
