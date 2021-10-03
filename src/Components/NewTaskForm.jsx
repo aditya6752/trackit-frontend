@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import axios from "axios"
-import DateTimePicker from 'react-datetime-picker';
+import DatePicker from 'react-date-picker';
+
 export default function NewTaskForm() {
     const [title, setTitle] = useState('')
     const [desc, setDesc] = useState('')
@@ -42,9 +43,10 @@ export default function NewTaskForm() {
                     <textarea className="form-control" id="" cols="30" rows="10" value={desc} onChange={(e) => { setDesc(e.target.value) }} ></textarea>
                 </div>
                 <div className="form-group">
-                    <DateTimePicker
+                    <DatePicker
                         onChange={(e)=>{setDate(e)}}
                         value={date}
+                        format="dd-MM-y"
                     />
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
